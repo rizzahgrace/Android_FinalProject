@@ -3,12 +3,11 @@ package com.example.julius.rpglayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Dice extends AppCompatActivity {
+public class login2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dice);
+        setContentView(R.layout.activity_login2);
     }
-
 }
