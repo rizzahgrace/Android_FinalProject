@@ -20,7 +20,6 @@
         <activity android:name=".Dice" />
         <activity android:name=".ViewChar" />
         <activity android:name=".Chat" />
-        <activity android:name=".login2" />
         <activity android:name=".CharCreation" />
         <activity android:name=".BackStory" />
         <activity android:name=".Home"></activity>
