@@ -1,50 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.julius.rpglayout.Home">
+    tools:context="com.example.julius.rpglayout.Home"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/btn_roll"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:text="DICE"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="175dp"
+        android:layout_marginStart="87dp"
+        android:layout_below="@+id/textView24"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:text="LOGOUT"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="330dp"
+        android:layout_marginBottom="140dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn_chara" />
+
+    <Button
+        android:id="@+id/btn_chara"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:text="VIEW CHAR"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="96dp"
+        android:layout_below="@+id/btn_roll"
+        android:layout_alignStart="@+id/btn_roll"
+        android:layout_marginTop="28dp" />
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:text="RPG SOMETHING  WELCOME SOMEONE"
         android:textAlignment="center"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="30dp" />
+        tools:layout_editor_absoluteY="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="157dp"
-        android:layout_height="48dp"
-        android:text="DICE"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="175dp" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="157dp"
-        android:layout_height="48dp"
-        android:text="CHAT"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="255dp" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="157dp"
-        android:layout_height="48dp"
-        android:text="LOGOUT"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="330dp" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="157dp"
-        android:layout_height="48dp"
-        android:text="VIEW CHAR"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="96dp" />
-</android.support.constraint.ConstraintLayout>
+        android:id="@+id/btn_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_exit"
+        android:layout_alignEnd="@+id/btn_exit"
+        android:layout_alignStart="@+id/btn_exit"
+        android:layout_marginBottom="13dp"
+        android:text="CHAT" />
+    >
+</RelativeLayout>
