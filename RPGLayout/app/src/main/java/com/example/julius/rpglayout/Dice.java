@@ -15,38 +15,29 @@ public class Dice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dice);
 
+        Button button4 = (Button) findViewById(R.id.btn_4);
         Button button6 = (Button) findViewById(R.id.btn_6);
         Button button10 = (Button) findViewById(R.id.btn_10);
-        Button button12 = (Button) findViewById(R.id.btn_dice);
-        final TextView sixsides = (TextView) findViewById(R.id.txt_6);
-        final TextView tensides = (TextView) findViewById(R.id.txt_10);
-        final TextView twelve = (TextView) findViewById(R.id.txt_12);
-
+        Button button12 = (Button) findViewById(R.id.btn_12);
+        Button button20 = (Button) findViewById(R.id.btn_20);
+        Button button2 = (Button) findViewById(R.id.btn_0);
         final TextView all = (TextView) findViewById(R.id.all);
 
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int min = 1;
+                int max = 4;
+                int random = ThreadLocalRandom.current().nextInt(min, max+1);
+                all.setText(new StringBuilder().append(random));
+            }
+        });
 
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* int min = 1;
-                int max = 6;
-                int max2 = 10;
-                int max3 = 12;
-                int max4 = 20;
-                int random = ThreadLocalRandom.current().nextInt(min, max+1);
-                int random2 = ThreadLocalRandom.current().nextInt(min, max2+1);
-                int random3 = ThreadLocalRandom.current().nextInt(min, max3+1);
-                int random4 = ThreadLocalRandom.current().nextInt(min, max4+1);
-                sixsides.setText(new StringBuilder().append(random));
-                tensides.setText(new StringBuilder().append(random2));
-                twelve.setText(new StringBuilder().append(random3));
-                all.setText(new StringBuilder().append(random));*/
-
                 int min = 1;
                 int max = 6;
-                int max2 = 10;
-                int max3 = 12;
-                int max4 = 20;
                 int random = ThreadLocalRandom.current().nextInt(min, max+1);
                 all.setText(new StringBuilder().append(random));
             }
@@ -55,55 +46,41 @@ public class Dice extends AppCompatActivity {
         button10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* int min = 1;
-                int max = 6;
-                int max2 = 10;
-                int max3 = 12;
-                int max4 = 20;
-                int random = ThreadLocalRandom.current().nextInt(min, max+1);
-                int random2 = ThreadLocalRandom.current().nextInt(min, max2+1);
-                int random3 = ThreadLocalRandom.current().nextInt(min, max3+1);
-                int random4 = ThreadLocalRandom.current().nextInt(min, max4+1);
-                sixsides.setText(new StringBuilder().append(random));
-                tensides.setText(new StringBuilder().append(random2));
-                twelve.setText(new StringBuilder().append(random3));
-                all.setText(new StringBuilder().append(random));*/
-
                 int min = 1;
                 int max = 10;
-                int max2 = 10;
-                int max3 = 12;
-                int max4 = 20;
                 int random = ThreadLocalRandom.current().nextInt(min, max+1);
                 all.setText(new StringBuilder().append(random));
             }
         });
+
         button12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* int min = 1;
-                int max = 6;
-                int max2 = 10;
-                int max3 = 12;
-                int max4 = 20;
-                int random = ThreadLocalRandom.current().nextInt(min, max+1);
-                int random2 = ThreadLocalRandom.current().nextInt(min, max2+1);
-                int random3 = ThreadLocalRandom.current().nextInt(min, max3+1);
-                int random4 = ThreadLocalRandom.current().nextInt(min, max4+1);
-                sixsides.setText(new StringBuilder().append(random));
-                tensides.setText(new StringBuilder().append(random2));
-                twelve.setText(new StringBuilder().append(random3));
-                all.setText(new StringBuilder().append(random));*/
-
                 int min = 1;
-                int max = 20;
-                int max2 = 10;
-                int max3 = 12;
-                int max4 = 20;
+                int max = 12;
                 int random = ThreadLocalRandom.current().nextInt(min, max+1);
                 all.setText(new StringBuilder().append(random));
             }
         });
+        button20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int min = 1;
+                int max = 20;
+                int random = ThreadLocalRandom.current().nextInt(min, max+1);
+                all.setText(new StringBuilder().append(random));
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int min = 0;
+                int max = 1;
+                int random = ThreadLocalRandom.current().nextInt(min, max+1);
+                all.setText(new StringBuilder().append(random));
+            }
+        });
+
     }
 
 }
