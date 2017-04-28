@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.julius.rpglayout.Home">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:text="RPG SOMETHING  WELCOME SOMEONE"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:text="DICE"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:text="CHAT"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:text="LOGOUT"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:text="VIEW CHAR"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="96dp" />
+</android.support.constraint.ConstraintLayout>

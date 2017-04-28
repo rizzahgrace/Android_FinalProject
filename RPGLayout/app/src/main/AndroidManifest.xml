@@ -22,7 +22,8 @@
         <activity android:name=".Chat" />
         <activity android:name=".login2" />
         <activity android:name=".CharCreation" />
-        <activity android:name=".BackStory"></activity>
+        <activity android:name=".BackStory" />
+        <activity android:name=".Home"></activity>
     </application>
 
 </manifest>
