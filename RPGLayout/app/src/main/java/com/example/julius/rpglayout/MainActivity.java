@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        
+
 
         Button reg = (Button) findViewById(R.id.btn_reg);
         reg.setOnClickListener(new View.OnClickListener() {

@@ -80,7 +80,7 @@
         android:layout_alignStart="@+id/textView21" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/txt_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView17"
@@ -88,7 +88,7 @@
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/textView32"
+        android:id="@+id/txt_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView18"
@@ -96,23 +96,23 @@
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/textView33"
+        android:id="@+id/txt_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView32"
+        android:layout_alignStart="@+id/txt_2"
         android:layout_alignTop="@+id/textView19"
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/textView34"
+        android:id="@+id/txt_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView33"
+        android:layout_alignEnd="@+id/txt_3"
         android:layout_alignTop="@+id/textView20"
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/textView35"
+        android:id="@+id/txt_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView21"
@@ -121,28 +121,28 @@
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/textView36"
+        android:id="@+id/txt_6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView30"
-        android:layout_alignStart="@+id/textView35"
+        android:layout_alignStart="@+id/txt_5"
         android:text="TextView" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_gen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Generate Stats"
         android:layout_below="@+id/textView30"
-        android:layout_alignEnd="@+id/textView34" />
+        android:layout_alignEnd="@+id/txt_4" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_next2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView36"
-        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/txt_6"
+        android:layout_below="@+id/btn_gen"
         android:layout_marginTop="34dp"
         android:text="Next" />
 
@@ -150,7 +150,7 @@
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button5"
+        android:layout_alignBottom="@+id/btn_next2"
         android:layout_alignEnd="@+id/textView19"
         android:text="Previous" />
 </RelativeLayout>
