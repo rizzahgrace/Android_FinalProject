@@ -13,14 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = (Button) findViewById(R.id.btn_test);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent testdice = new Intent(MainActivity.this,Dice.class);
-                startActivity(testdice);
-            }
-        });
+        
 
         Button reg = (Button) findViewById(R.id.btn_reg);
         reg.setOnClickListener(new View.OnClickListener() {
