@@ -10,20 +10,35 @@ import android.widget.TextView;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class CharCreation extends AppCompatActivity {
-
+    TextView strength;
+    TextView intelligence;
+    TextView dexterity;
+    TextView constitution;
+    TextView wisdom;
+    TextView charisma;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_char_creation);
-        Button buttongen = (Button) findViewById(R.id.btn_gen);
-        final TextView all = (TextView) findViewById(R.id.all);
-        buttongen.setOnClickListener(new View.OnClickListener() {
+
+        Button buttonGen = (Button) findViewById(R.id.btn_gen);
+        strength = (TextView) findViewById(R.id.txt_str);
+        intelligence = (TextView) findViewById(R.id.txt_int);
+        dexterity = (TextView) findViewById(R.id.txt_dex);
+        constitution = (TextView) findViewById(R.id.txt_con);
+        wisdom = (TextView) findViewById(R.id.txt_wis);
+        charisma = (TextView) findViewById(R.id.txt_cha);
+
+        buttonGen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int min = 1;
-                int max = 4;
-                int random = ThreadLocalRandom.current().nextInt(min, max+1);
-                all.setText(new StringBuilder().append(random));
+                ForStats stat = new ForStats();
+                strength.setText(stat.roll(3,6));
+                intelligence.setText(stat.roll(3,6));
+                dexterity.setText(stat.roll(3,6));
+                constitution.setText(stat.roll(3,6));
+                wisdom.setText(stat.roll(3,6));
+                charisma.setText(stat.roll(3,6));
             }
         });
 
