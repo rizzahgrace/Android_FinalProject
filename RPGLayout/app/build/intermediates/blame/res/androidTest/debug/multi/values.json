@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\Kyle\\Downloads\\Android_FinalProject-master (1)\\Android_FinalProject-master\\RPGLayout\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "C:\\Users\\Kyle\\.android\\build-cache\\508fbf69cff6677fbedffc3d85e322ae9f35c0d6\\output\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 45,
+                        "endOffset": 270
+                    }
+                }
+            }
+        ]
+    }
+]
