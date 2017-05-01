@@ -36,7 +36,7 @@ public class DNDApp extends Application {
     public ArrayList<Chat> getMessageList() { return mMessageList; }
 
     public void saveUserData(String username, String password,
-                             String charname, String desc) {
+                             String charname) {
         SharedPreferences prefs =
                 getSharedPreferences("com.example.julius.rpglayout;", Context.MODE_PRIVATE);
 
@@ -45,6 +45,23 @@ public class DNDApp extends Application {
         edt.putString("USERNAME", username);
         edt.putString("PASSWORD", password);
         edt.putString("CHARNAME", charname);
+        edt.commit();
+        return;
+    }
+
+    public void saveCharacterData(String charname, int str, int inte, int dex, int con, int wis, int cha) {
+        SharedPreferences prefs =
+                getSharedPreferences("com.example.julius.rpglayout;", Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor edt = prefs.edit();
+
+        edt.putString("CHARNAE", charname);
+        edt.putString("STRENGTH", Integer.toString(str));
+        edt.putString("INTELLIGENXE", Integer.toString(inte));
+        edt.putString("DEXTERITY", Integer.toString(dex));
+        edt.putString("CONSTITUTION", Integer.toString(con));
+        edt.putString("WISDOM", Integer.toString(wis));
+        edt.putString("CHARISMA", Integer.toString(cha));
         edt.commit();
         return;
     }
@@ -67,8 +84,8 @@ public class DNDApp extends Application {
     /* ************************************************************** */
     /* Public Methods for saving user data to files on the filesystem */
     /* ************************************************************** */
-    public boolean saveAppUserFriendList(String username) {
-        String filename = username + "_characterlist.txt";
+    public boolean saveAppUserCharacterList(String charname) {
+        String filename = charname + "_characterlist.txt";
 
         String fileContents = "";
         for (int i = 0; i < mCharacterList.size(); i++) {
@@ -210,148 +227,5 @@ public class DNDApp extends Application {
         }
 
         return true;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    private HttpClient mHttpClient = new DefaultHttpClient();
-    private ArrayList<Chat> mChatMessages = new ArrayList<>();
-
-    private String mServer = "http://192.168.1.14:8000/"; /* TODO Set default server URL here */
-
-    /* Returns the current chat server URL */
-    public String getServerUrl() {
-        return mServer;
-    }
-
-    /* Sets the chat server URL to something else */
-    public boolean setServer(String serverUrl) {
-        mServer = serverUrl;
-        return true;
-    }
-
-    /* Sends a chat message through HTTP to the chat server */
-    public boolean sendChatMessage(String usr, String msg) {
-        /* To use HTTP Post to deliver parameters (e.g. a username and
-         *  a message in our case), we have to create an arraylist of
-         *  NameValuePair objects like so */
-        ArrayList<NameValuePair> postParams = new ArrayList<>();
-        postParams.add(new BasicNameValuePair("usr", usr));
-        postParams.add(new BasicNameValuePair("msg", msg));
-
-        /* Create the base HTTP POST request with the URL of the chat
-         *  server plus the resource path where we can send messages */
-        HttpPost httpPost = new HttpPost(mServer + "send_message");
-        try {
-            /* Store our POST parameters as an Entity in our HttpPost */
-            httpPost.setEntity( new UrlEncodedFormEntity(postParams) );
-
-            /* Execute our HTTP POST request */
-            HttpResponse response = mHttpClient.execute(httpPost);
-
-            /* We can interpret the response here, but chose not to since
-             *  it isn't that important to use now */
-        } catch (Exception e) {
-            Log.e("CrossTalkApp", "Exception occurred: " + e.getMessage());
-            return false;
-        }
-
-        return true;
-    }
-
-    /* Syncs chat messages through HTTP with the chat server */
-    public ArrayList<ChatMessage> syncChatMessages() {
-        String contents = "";
-
-        /* Create the base HTTP GET request with the URL of the chat
-         *  server plus the resource path where we can retrieve messages */
-        HttpGet request = new HttpGet(mServer + "get_messages");
-
-        try {
-            /* Execute our HTTP GET request */
-            HttpResponse response = mHttpClient.execute(request);
-
-            /* Use the convenience class EntityUtils to turn the contents
-             *  of the chat server's response to our HTTP GET request into
-             *  a string */
-            contents = EntityUtils.toString(response.getEntity());
-        } catch (Exception e) {
-            Log.e("CrossTalkApp", "Exception occurred: " + e.getMessage());
-            contents = "";
-        }
-
-        /* Pass the chat server's HTTP response contents to another function
-         *  for further processing/parsing */
-        return parseChatMessages(contents);
-    }
-
-    /* Parses chat messages given the contents of the HTTP response string of
-     *  the chat server */
-    private ArrayList<ChatMessage> parseChatMessages(String respContents) {
-        Log.i("CrossTalkApp", respContents);
-
-        /* Clear the current list of Chat Messages */
-        mChatMessages.clear();
-
-        /* The structure of the data returned by the chat server is as follows:
-         *  <user>|<message>;<user>|<message>;...
-         *
-         *  So to get each message piece, we split by the (;) first */
-        String messages[] = respContents.split(";");
-
-        /* Cycle through each message piece */
-        for (int i = 0; i < messages.length; i++) {
-            /* Each message has a 'user' and a 'message' part, separated
-             *  by (|). We need to split this as well. */
-            String messagePart[] = messages[i].split("\\|");
-
-            /* Check if we have exactly two parts in the message
-             *  (one for the username and one for the actual msg);
-             *  if not then this message is malformed and we must
-             *  skip it */
-            if (messagePart.length != 2) {
-                continue;
-            }
-
-            /* Get each part of the message */
-            String user = messagePart[0];
-            String msg = messagePart[1];
-
-            /* Then add it to our chat messages list */
-            mChatMessages.add(new ChatMessage(user, msg));
-        }
-
-        /* Debug: Check if the messages are being properly parsed via
-         *  the Android Monitor on your IDE */
-        for (ChatMessage msg : mChatMessages) {
-            Log.d("CrossTalkApp", "Messages --> " + msg.toString());
-        }
-
-        /* Finally return the chat messages list we built up */
-        return mChatMessages;
     }
 }

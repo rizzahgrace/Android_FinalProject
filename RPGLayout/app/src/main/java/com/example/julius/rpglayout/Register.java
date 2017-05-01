@@ -48,7 +48,7 @@ public class Register extends AppCompatActivity {
         DNDApp app = (DNDApp) getApplication();
         app.saveUserData(edtUsername.getText().toString(),
                 edtPassword.getText().toString(),
-                edtCharName.getText().toString();
+                edtCharName.getText().toString() );
         finish();
         return;
     }
