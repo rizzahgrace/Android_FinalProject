@@ -77,7 +77,8 @@ public class Dice extends AppCompatActivity {
                 int min = 0;
                 int max = 1;
                 int random = ThreadLocalRandom.current().nextInt(min, max+1);
-                all.setText(new StringBuilder().append(random));
+                if(random == 0){all.setText(new StringBuilder().append("Heads"));}
+                if(random == 0){all.setText(new StringBuilder().append("Tails"));}
             }
         });
 
