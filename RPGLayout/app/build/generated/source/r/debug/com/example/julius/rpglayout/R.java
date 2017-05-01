@@ -2346,8 +2346,8 @@ containing a value of this type.
         public static final int editText10=0x7f0b009a;
         public static final int editText11=0x7f0b009b;
         public static final int editText12=0x7f0b009c;
-        public static final int editText13=0x7f0b0088;
-        public static final int editText14=0x7f0b008a;
+        public static final int edt_username =0x7f0b0088;
+        public static final int edt_password =0x7f0b008a;
         public static final int editText15=0x7f0b008e;
         public static final int editText4=0x7f0b0082;
         public static final int editText6=0x7f0b005f;
