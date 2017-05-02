@@ -1,90 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/knightw"
+    android:backgroundTintMode="src_over"
     tools:context="com.example.julius.rpglayout.MainActivity">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="168dp"
         android:layout_height="180dp"
-        app:srcCompat="@drawable/rpg"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp" />
+        android:layout_marginTop="17dp"
+        app:srcCompat="@drawable/rpg" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edt_username"
         android:layout_width="169dp"
         android:layout_height="35dp"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/textView4"
         android:ems="10"
         android:fontFamily="monospace"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Holo.Medium"
-        android:layout_below="@+id/textView4"
-        android:layout_alignStart="@+id/imageView2" />
+        android:textColor="#000000"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="169dp"
         android:layout_height="29dp"
+        android:layout_alignStart="@+id/edt_username"
+        android:layout_below="@+id/edt_username"
         android:fontFamily="sans-serif-smallcaps"
         android:text="PASSWORD"
         android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_below="@+id/editText"
-        android:layout_alignStart="@+id/editText" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="169dp"
         android:layout_height="29dp"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_centerVertical="true"
         android:fontFamily="sans-serif-smallcaps"
         android:text="USERNAME"
         android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_centerVertical="true"
-        android:layout_alignEnd="@+id/imageView2" />
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/edt_password"
         android:layout_width="168dp"
         android:layout_height="42dp"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_below="@+id/textView3"
         android:ems="10"
-        android:fontFamily="sans-serif-smallcaps"
+        android:fontFamily="monospace"
         android:inputType="textPassword"
         android:textAlignment="center"
-        android:layout_below="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3" />
+        android:textColor="#000000"
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/btn_login"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="145dp"
         android:layout_height="35dp"
+        android:layout_alignStart="@+id/btn_reg"
+        android:layout_below="@+id/edt_password"
+        android:layout_marginTop="13dp"
         android:background="@android:color/holo_blue_dark"
         android:text="Log-In"
-        android:layout_marginTop="13dp"
-        android:layout_below="@+id/editText4"
-        android:layout_alignStart="@+id/btn_reg" />
+        android:textColor="#000000" />
 
     <Button
         android:id="@+id/btn_reg"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="145dp"
         android:layout_height="35dp"
-        android:background="@android:color/holo_blue_dark"
-        android:text="Register"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="420dp"
-
         android:layout_below="@+id/btn_login"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="12dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Register"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="sans-serif-condensed"
+        android:text="RPG HELPER"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
 
 </RelativeLayout>

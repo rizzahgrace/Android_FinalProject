@@ -9,25 +9,29 @@
 
     <Button
         android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
 
-        android:layout_marginStart="87dp"
         android:layout_alignBaseline="@+id/btn_nextr"
         android:layout_alignBottom="@+id/btn_nextr"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="87dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Back" />
 
     <Button
         android:id="@+id/btn_nextr"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
 
-        android:layout_marginBottom="55dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:layout_marginStart="39dp"
         android:layout_toEndOf="@+id/button"
-        android:layout_marginStart="39dp" />
+        android:background="@android:color/holo_blue_dark"
+        android:text="Next" />
 
     <TextView
         android:id="@+id/textView2"
@@ -37,9 +41,14 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="25dp"
         android:layout_toStartOf="@+id/btn_nextr"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="monospace"
         android:text="Register"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:textAllCaps="TRUE"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -48,77 +57,63 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="Username"
         android:textAlignment="center"
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editText13"
+        android:id="@+id/edt_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView5"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:textAlignment="center" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText13"
-        android:text="Password"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="14sp" />
 
     <EditText
-        android:id="@+id/editText14"
+        android:id="@+id/edt_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView6"
         android:ems="10"
-        android:inputType="textPassword" />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Class"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:layout_above="@+id/spinner2"
-        android:layout_alignParentStart="true" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="41dp" />
+        android:inputType="textPassword"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/textView29"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText14"
+        android:layout_below="@+id/edt_password"
         android:layout_marginTop="18dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="Character Name"
         android:textAlignment="center"
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editText15"
+        android:id="@+id/edt_char_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView29"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edt_username"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Password"
+        android:textAlignment="center"
+        android:textSize="24sp" />
 </RelativeLayout>

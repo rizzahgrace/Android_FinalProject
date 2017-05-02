@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Kyle\\Downloads\\Android_FinalProject-master (1)\\Android_FinalProject-master\\RPGLayout\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+        "outputFile": "/Users/macair/Desktop/Android_FinalProject-Rizzah/RPGLayout/D:\\CE 199\\Final Project\\RPGLayout\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,79 @@
                     "endOffset": 117
                 },
                 "from": {
-                    "file": "C:\\Users\\Kyle\\.android\\build-cache\\786905832c10130782c2a8bb822356f8b998b212\\output\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "file": "/Users/macair/Desktop/Android_FinalProject-Rizzah/RPGLayout/C:\\Users\\Rizzah\\.android\\build-cache\\02162be22dbcd72128431c2ba44f1c779e3b1e31\\output\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 66,
+                        "endOffset": 117
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/macair/Desktop/Android_FinalProject-Rizzah/RPGLayout/C:\\Users\\Kyle\\Downloads\\Android_FinalProject-master (1)\\Android_FinalProject-master\\RPGLayout\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 66,
+                    "endOffset": 117
+                },
+                "from": {
+                    "file": "/Users/macair/Desktop/Android_FinalProject-Rizzah/RPGLayout/C:\\Users\\Kyle\\.android\\build-cache\\786905832c10130782c2a8bb822356f8b998b212\\output\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 66,
+                        "endOffset": 117
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/macair/Desktop/Android_FinalProject-Rizzah/RPGLayout/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 66,
+                    "endOffset": 117
+                },
+                "from": {
+                    "file": "/Users/macair/.android/build-cache/0a3870c757e5d4c5344ec940543eaf0b111cffd2/output/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 66,
+                        "endOffset": 117
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/macair/Desktop/Android_FinalProject-Rizzah/RPGLayout/D:\\CE 199\\New folder\\RPGLayout\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 66,
+                    "endOffset": 117
+                },
+                "from": {
+                    "file": "/Users/macair/Desktop/Android_FinalProject-Rizzah/RPGLayout/C:\\Users\\Rizzah\\.android\\build-cache\\02162be22dbcd72128431c2ba44f1c779e3b1e31\\output\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

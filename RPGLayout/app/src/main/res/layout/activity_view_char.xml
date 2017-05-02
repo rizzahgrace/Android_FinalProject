@@ -23,28 +23,14 @@
         android:id="@+id/textView28"
         android:layout_width="368dp"
         android:layout_height="24dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/txt_vclass"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="48dp"
         android:text="Stats"
         android:textAlignment="center"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="253dp" />
-
-    <TextView
-        android:id="@+id/txt_vclass"
-        android:layout_width="match_parent"
-        android:layout_height="29dp"
-        android:layout_alignParentStart="true"
+        tools:layout_editor_absoluteY="253dp"
         android:layout_below="@+id/txt_vname"
-        android:layout_marginTop="5dp"
-        android:text="Class"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="57dp" />
+        android:layout_alignParentStart="true" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -120,9 +106,8 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="Name"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         tools:layout_editor_absoluteX="313dp"
                         tools:layout_editor_absoluteY="294dp" />
 
@@ -133,9 +118,8 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="Name"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         tools:layout_editor_absoluteX="146dp"
                         tools:layout_editor_absoluteY="294dp" />
 
@@ -146,9 +130,8 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="Name"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         tools:layout_editor_absoluteX="146dp"
                         tools:layout_editor_absoluteY="335dp" />
                 </LinearLayout>
@@ -220,9 +203,8 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="Name"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         tools:layout_editor_absoluteX="146dp"
                         tools:layout_editor_absoluteY="371dp" />
 
@@ -233,9 +215,8 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="Name"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         tools:layout_editor_absoluteX="313dp"
                         tools:layout_editor_absoluteY="371dp" />
 
@@ -246,9 +227,8 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="Name"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         tools:layout_editor_absoluteX="313dp"
                         tools:layout_editor_absoluteY="335dp" />
                 </LinearLayout>
@@ -257,17 +237,6 @@
 
         </LinearLayout>
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/txt_bstory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/linearLayout2"
-        android:layout_marginTop="15dp"
-        android:text="Back Story" />
 
 
 </RelativeLayout>

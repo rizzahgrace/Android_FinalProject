@@ -14,9 +14,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="19dp"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="Stats Generation"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textAllCaps="TRUE"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -111,7 +115,6 @@
                 android:layout_height="0dp"
                 android:layout_marginTop="60dp"
                 android:layout_weight="1"
-                android:text="TextView"
                 android:textAlignment="center" />
 
             <TextView
@@ -120,7 +123,6 @@
                 android:layout_height="0dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:text="TextView"
                 android:textAlignment="center" />
 
             <TextView
@@ -129,7 +131,6 @@
                 android:layout_height="0dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:text="TextView"
                 android:textAlignment="center" />
 
             <TextView
@@ -138,7 +139,6 @@
                 android:layout_height="0dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:text="TextView"
                 android:textAlignment="center" />
 
             <TextView
@@ -147,7 +147,6 @@
                 android:layout_height="0dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:text="TextView"
                 android:textAlignment="center" />
 
             <TextView
@@ -157,13 +156,13 @@
                 android:layout_marginBottom="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:text="TextView"
                 android:textAlignment="center" />
         </LinearLayout>
     </LinearLayout>
 
     <Button
         android:id="@+id/btn_gen"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -171,6 +170,7 @@
         android:layout_below="@+id/linearLayout"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
+        android:background="@android:color/holo_green_dark"
         android:text="Generate Stats" />
 
     <LinearLayout
@@ -181,24 +181,29 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/button6"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="@android:color/holo_blue_dark"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
-            android:text="Next" />
+
+            android:text="Previous" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/button5"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
-            android:text="Previous" />
+            android:background="@android:color/holo_blue_dark"
+            android:text="Next" />
     </LinearLayout>
 
 </RelativeLayout>

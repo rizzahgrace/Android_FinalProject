@@ -13,6 +13,12 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_home);
 
+        Intent receivedIntent = getIntent();
+
+        final String username = receivedIntent.getStringExtra("USERNAME");
+        //String password = receivedIntent.getStringExtra("PASSWORD");
+        System.out.println(username);
+
         Button dice = (Button) findViewById(R.id.btn_roll);
         dice.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,15 +32,19 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent chara = new Intent(Home.this,ViewChar.class);
+                System.out.println(username);
+                chara.putExtra("USERNAME", username);
+
                 startActivity(chara);
+
             }
         });
         Button chat = (Button) findViewById(R.id.btn_chat);
         chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent chat = new Intent(Home.this,Chat.class);
-                startActivity(chat);
+             //   Intent chat = new Intent(Home.this,Chat.class);
+               // startActivity(chat);
             }
         });
 
